@@ -1,0 +1,11 @@
+age,workclass,education,occupation,hours-per-week
+39,State-gov,Bachelors,Adm-clerical,40
+50,Self-emp-not-inc,Bachelors,Exec-managerial,13
+38,Private,HS-grad,Handlers-cleaners,40
+53,Private,11th,Handlers-cleaners,40
+28,Private,Bachelors,Prof-specialty,40
+37,Private,Masters,Exec-managerial,60
+29,Private,Masters,Tech-support,45
+45,Private,Doctorate,Prof-specialty,50
+32,Self-emp-inc,Bachelors,Sales,55
+41,Federal-gov,Masters,Exec-managerial,48
