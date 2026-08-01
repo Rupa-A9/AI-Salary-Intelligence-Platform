@@ -5,12 +5,16 @@ st.set_page_config(
     page_title="AI Salary Intelligence Platform",
     page_icon="💼",
     layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 load_css("assets/styles.css")
 
+st.sidebar.title("Navigation")
+st.sidebar.success("Select a page from the sidebar.")
+
 st.markdown(
-    '<p class="main-title">💼 AI Salary Intelligence Platform</p>',
+    '<p class="main-title">AI Salary Intelligence Platform</p>',
     unsafe_allow_html=True,
 )
 
@@ -21,21 +25,98 @@ st.markdown(
 
 st.divider()
 
-st.header("🚀 Welcome")
+left, right = st.columns([2, 1])
 
-st.write("""
-This platform helps HR teams analyze employee salary data using Artificial Intelligence.
+with left:
 
-### Features
+    st.header("Project Overview")
 
-- Salary Prediction
-- Analytics Dashboard
-- Explainable AI
-- AI Generated Insights
-- PDF Reports
-- Interactive Visualizations
+    st.write("""
+The AI Salary Intelligence Platform helps HR teams analyze employee information,
+predict salary classes, understand prediction factors, and generate AI-powered insights.
+
+This project demonstrates production-ready machine learning deployment using
+Streamlit and Scikit-Learn.
 """)
 
-st.info("👈 Use the sidebar to navigate through the application.")
+with right:
 
-st.success("Project setup completed successfully.")
+    st.metric("Project Version", "1.0")
+    st.metric("Status", "Development")
+
+st.divider()
+
+st.header("Modules")
+
+col1, col2 = st.columns(2)
+
+with col1:
+
+    st.markdown("""
+<div class="feature-card">
+
+### Salary Prediction
+
+Predict employee salary category using Machine Learning.
+
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div class="feature-card">
+
+### Dashboard
+
+Interactive HR analytics dashboard.
+
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div class="feature-card">
+
+### Explainable AI
+
+Understand why predictions were made.
+
+</div>
+""", unsafe_allow_html=True)
+
+with col2:
+
+    st.markdown("""
+<div class="feature-card">
+
+### AI Insights
+
+Generate intelligent summaries from employee data.
+
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div class="feature-card">
+
+### Reports
+
+Download professional PDF reports.
+
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+<div class="feature-card">
+
+### Docker Ready
+
+Production deployment support.
+
+</div>
+""", unsafe_allow_html=True)
+
+st.divider()
+
+st.markdown(
+    '<p class="footer">AI Salary Intelligence Platform | Built with Python, Streamlit and Scikit-Learn</p>',
+    unsafe_allow_html=True,
+)

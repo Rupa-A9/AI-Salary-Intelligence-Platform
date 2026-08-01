@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title("📈 Analytics")
+st.title("Analytics")
 
-st.write("Analytics page coming soon.")
+st.info("Analytics module is under development.")

@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title("📊 Dashboard")
+st.title("Dashboard")
 
-st.write("Dashboard page is under development.")
+st.info("Dashboard module is under development.")

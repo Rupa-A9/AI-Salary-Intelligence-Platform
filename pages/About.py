@@ -1,17 +1,27 @@
 import streamlit as st
 
-st.title("ℹ️ About")
+st.title("About")
 
 st.write("""
-AI Salary Intelligence Platform
+## AI Salary Intelligence Platform
 
-Version : 1.0
+This application demonstrates an end-to-end machine learning solution for HR analytics.
 
-Built using
+### Technologies
 
 - Python
 - Streamlit
-- Scikit-Learn
 - Pandas
 - NumPy
+- Scikit-Learn
+- Joblib
+
+### Future Features
+
+- Explainable AI
+- Multiple ML Models
+- AI Insights
+- Docker
+- GitHub Actions
+- PDF Reports
 """)

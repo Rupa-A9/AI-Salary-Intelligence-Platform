@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.title("🤖 AI Insights")
+st.title("AI Insights")
 
-st.write("AI Insights module coming soon.")
+st.info("AI Insights module is under development.")
